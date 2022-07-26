@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+/* Nav Bar */
+
+.navbar-container {
+  margin: 25px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+div>img {
+  width: 130px;
+}
+
+nav ul.list {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/* Selected nav item */
+ul>li:first-child {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+ul>li:first-child::after {
+  content: "";
+  display: block;
+  width: 70%;
+  padding-top: 3px;
+  margin-left: 15%;
+  border-bottom: 2px solid #000;
+}
+
+nav .button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-button {
+  margin-left: 15px;
+  padding: 5px 35px;
+  background-color: #fff;
+  color: #758283;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+/* Section left (profile image) */
+
+[alt="person-hero-iamge"] {
+  position: absolute;
+  left: 60px;
+  bottom: 150px;
+  width: 400px;
+}
+
+.square {
+  position: absolute;
+  left: 120px;
+  bottom: 70px;
+}
+
+/* positioning elements */
+
+.globe {
+  position: absolute;
+  left: 55%;
+  top: 130px;
+  width: 80px;
+}
+
+.star {
+  position: absolute;
+  top: 200px;
+  right: 180px;
+}
+
+.star::before {
+  content: "";
+  /* background: url(./assets/start.png); */
+  background: url("./assets/start.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  bottom: -420px;
+  right: 550px;
+}
+
+/* Main content */
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  min-height: 88vh;
+  width: 60%;
+  right: 0;
+  padding-top: 80px;
+}
+
+.hero-container-right .hero-heading {
+  margin-top: 3em;
+  font-size: 2.6rem;
+}
+
+.hero-container-right .hero-description,
+.contact-heading {
+  font-family: "Poppins";
+  color: #758283;
+}
+
+.hero-container-right .hero-description {
+  margin-top: 3em;
+  margin-bottom: 5em;
+  width: 80%;
+  text-align: center;
+}
+
+
+/* Email and Join now buttons */
+
+.button-email {
+  font-size: 1.1rem;
+  padding: 2px 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #000;
+  font-family: 'Orbitron', sans-serif;
+  margin-right: 20px;
+}
+
+.button-join {
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px solid #000;
+  padding: 2px 10px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+
+/* Contact section */
+
+.hero-container-right>div:last-child {
+  padding-top: 100px;
+}
+
+.contact-heading {
+  margin-bottom: 8px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.icons * {
+  width: 40px;
+  margin: 0 3px;
+  cursor: pointer;
+}
