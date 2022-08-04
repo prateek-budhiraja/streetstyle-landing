@@ -32,6 +32,7 @@ nav ul.list {
   font-weight: 500;
   list-style-type: none;
   cursor: pointer;
+  align-items: center;
 }
 
 /* Selected nav item */
@@ -185,4 +186,97 @@ svg {
   width: 40px;
   margin: 0 3px;
   cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+  body {
+    max-height: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow: visible;
+  }
+
+  div>img {
+    width: 80px;
+  }
+
+  nav ul.list {
+    gap: 1em;
+    font-size: .8rem;
+  }
+
+  ul>li:first-child {
+    font-size: .8rem;
+  }
+
+  .navbar-container {
+    margin: 25px 20px;
+  }
+
+  .search-icon,
+  .nav-button {
+    display: none;
+  }
+
+  [alt="person-hero-iamge"] {
+    left: 20px;
+    top: 90px;
+    width: 300px;
+  }
+
+  .square {
+    width: 100px;
+    left: 10px;
+    top: 100px;
+  }
+
+  .hero-container-right {
+    margin-top: 420px;
+    margin-left: 0;
+    margin-right: 80px;
+    padding: 0;
+  }
+
+  .hero-container-right .hero-heading {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+  }
+
+  .globe {
+    display: none;
+  }
+
+  .hero-container-right .hero-description {
+    margin-top: 1.6em;
+    margin-bottom: 5em;
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+  }
+
+  .button-email {
+    font-size: .8rem;
+    margin: 0;
+    padding: 3px 20px;
+    font-size: .7rem;
+  }
+
+  .button-join {
+    font-size: .7rem;
+    padding: 2px;
+    margin: 0;
+  }
+
+  .hero-container-right>div:last-child {
+    padding-top: 40px;
+  }
+
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .icons * {
+    width: 25px;
+  }
 }
